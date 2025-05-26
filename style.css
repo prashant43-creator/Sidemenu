@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Hamburger */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1100; /* आधीच्या सगळ्यांपेक्षा वर */
+}
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s ease;
+}
+
+/* Hamburger Animation - To X */
+.hamburger.open .line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: white;
+}
+.hamburger.open .line2 {
+  opacity: 0;
+  
+}
+.hamburger.open .line3 {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background-color: white;
+}
+
+/* Overlay - clicking outside */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1000;
+  display: none;
+}
+.overlay.show {
+  display: block;
+}
+ul{
+  border-top: 4px solid yellow;
+}
+/* Side Nav */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 200px;
+  background-color: #222;
+  color: #fff;
+  padding-top: 60px;
+  transition: left 0.4s ease;
+  z-index: 1050;
+}
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+}
+.side-nav ul li {
+  padding: 15px 20px;
+}
+.side-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.side-nav ul li a.active,
+.side-nav ul li a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Active nav open */
+.side-nav.open {
+  left: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .side-nav {
+    width: 70%;
+  }
+  .hamburger{
+    
+  }
+}
+
+i{
+  margin-right: 8px;
+  font-size: 20px;
+  color: white;
+}
