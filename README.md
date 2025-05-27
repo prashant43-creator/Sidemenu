@@ -9,7 +9,7 @@ A stylish and responsive sidebar navigation menu built using HTML, CSS, and Java
 
 ## Screenshots
 
-![Sidemenu Screenshot](Screenshot_20250527_214815_Chrome.jpg)
+![Sidemenu Screenshot](Screenshot_sidemenu1.jpg)
 
 ## Features
 
